@@ -6,6 +6,6 @@ resource "mongodbatlas_encryption_at_rest" "encrypt" {
     enabled                = var.aws_kms_config.enabled
     customer_master_key_id = var.aws_kms_config.customer_master_key_id
     region                 = var.aws_kms_config.region
-    # role_id                = var.aws_kms_config.role_id
+    role_id                = var.aws_kms_config.role_id
   }
 }
