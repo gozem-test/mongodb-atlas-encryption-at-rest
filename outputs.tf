@@ -1,3 +1,3 @@
-output "standard" {
-  value = mongodbatlas_cluster.cluster.connection_strings[0].standard
+output "project_id" {
+  value = mongodbatlas_encryption_at_rest.encrypt.project_id
 }
